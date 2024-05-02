@@ -1,0 +1,18 @@
+# Logs
+logs
+*.log
+yarn-error.log*
+
+node_modules
+dist
+*.local
+
+# Editor directories and files
+.vscode/*
+.idea
+
+# Environment variables
+.env
+
+# Build directory
+build_dir
