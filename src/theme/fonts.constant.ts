@@ -1,12 +1,19 @@
 /**
  * Font-Face definitions.
  */
+import Poppins300 from '@assets/fonts/poppins-300.woff';
 import Poppins400 from '@assets/fonts/poppins-400.woff';
 import Poppins500 from '@assets/fonts/poppins-500.woff';
 import Poppins700 from '@assets/fonts/poppins-700.woff';
 
 export const FONTS = {
   styleOverrides: `
+        @font-face {
+            font-family: "Poppins";
+            font-weight: 300;
+            font-style: normal;
+            src: url(${Poppins300}) format('woff');
+        }
         @font-face {
             font-family: "Poppins";
             font-weight: 400;

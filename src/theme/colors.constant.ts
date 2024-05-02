@@ -3,20 +3,20 @@
  */
 export const COLORS = {
   primary: {
-    main: '#000000',
-    light: '#626262',
-  },
-  danger: {
-    contrastText: '#9B1C1C',
+    main: '#222222',
+    light: '#BEBEBE',
   },
   background: {
-    default: '#F2F2F2',
+    default: '#FFFFFF',
+  },
+  actions: {
+    default: '#FED6FF',
   },
   grey: {
-    200: '#E4E4E4',
-    500: '#8A8A8A',
-    800: '#383838',
+    200: '#C7C7C7',
+    500: '#D9D9D9',
+    700: '#E3E3E3',
+    800: '#555555',
   },
-  divider: '#E5E7EB',
   shadow: 'rgba(0, 0, 0, 0.16)',
 };

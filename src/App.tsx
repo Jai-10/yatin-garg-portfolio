@@ -1,5 +1,9 @@
-import './App.css';
+import { RouterProvider } from 'react-router-dom';
 
-export const App = () => {
-  return <p>test</p>;
-};
+import { router } from '@routes/routes';
+
+/**
+ * The main application component.
+ * @returns {JSX} - The root component of the application.
+ */
+export const App = () => <RouterProvider router={router} />;
