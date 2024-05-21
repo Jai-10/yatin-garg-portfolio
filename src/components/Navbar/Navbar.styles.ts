@@ -10,7 +10,7 @@ export const useStyles = makeStyles({ name: 'Navbar' })(({ palette, spacing }) =
       justifyContent: 'space-between',
       flexDirection: 'row',
 
-      padding: spacing(32),
+      padding: spacing(16),
       paddingLeft: spacing(84),
       paddingRight: spacing(84),
 
@@ -18,19 +18,25 @@ export const useStyles = makeStyles({ name: 'Navbar' })(({ palette, spacing }) =
       backgroundColor: palette.background.default,
     },
     navbarText: {
-      fontSize: spacing(24),
       cursor: 'pointer',
+      fontSize: spacing(28),
+      transformOrigin: 'top left',
+      transition: 'all ease-in-out .5s',
+      textTransform: 'capitalize',
+
+      '&:hover': {
+        transform: 'scale(1.2)',
+      },
     },
     resumeButton: {
       padding: spacing(10),
       paddingLeft: spacing(24),
       paddingRight: spacing(24),
 
-      fontSize: spacing(18),
+      fontSize: spacing(16),
       fontWeight: 400,
       borderRadius: spacing(32),
       textTransform: 'capitalize',
-      letterSpacing: spacing(0.7),
       border: `${spacing(1.6)} solid ${palette.primary.main}`,
 
       '&:hover': {
